@@ -2,6 +2,22 @@
   text-align: center;
 }
 
+.score{
+  padding: 20px;
+  text-align: center;
+}
+
+.teamLogo{
+  width: 100%;
+  display: block;
+}
+
+.scores{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
