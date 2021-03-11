@@ -38,7 +38,7 @@ const Scores = () => {
 
     useEffect(() => {
         getScores();
-    })
+    }, [])
 
 
     let scoresToRender;
