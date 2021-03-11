@@ -9,25 +9,23 @@ const Scores = () => {
 
     const getScores = async () => {
         try {
-            console.log("gettin data")
+
             const response = await fetch("https://statsapi.web.nhl.com/api/v1/schedule");//?date=" + date);
             const jsonData = await response.json();
             var games = jsonData.dates[0].games;
             
             setScores(games);
-            console.log(games)
 
             var homeScore = 0;
             var awayScore = 0;
 
             for (var i = 0; i < games.length; i++){
-                console.log(games[i].teams.home.score)
+
                 homeScore += games[i].teams.home.score;
-                console.log(homeScore)
+
                 awayScore += games[i].teams.away.score;
             }
 
-            console.log(homeScore)
 
             setSalami([homeScore, awayScore])
 
