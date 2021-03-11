@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Grand-Salami/static/css/main.5ac06d04.chunk.css",
-    "main.js": "/Grand-Salami/static/js/main.b8f4bafd.chunk.js",
-    "main.js.map": "/Grand-Salami/static/js/main.b8f4bafd.chunk.js.map",
+    "main.css": "/Grand-Salami/static/css/main.e1032e6b.chunk.css",
+    "main.js": "/Grand-Salami/static/js/main.212a3b83.chunk.js",
+    "main.js.map": "/Grand-Salami/static/js/main.212a3b83.chunk.js.map",
     "runtime-main.js": "/Grand-Salami/static/js/runtime-main.22788222.js",
     "runtime-main.js.map": "/Grand-Salami/static/js/runtime-main.22788222.js.map",
     "static/js/2.fb995e84.chunk.js": "/Grand-Salami/static/js/2.fb995e84.chunk.js",
     "static/js/2.fb995e84.chunk.js.map": "/Grand-Salami/static/js/2.fb995e84.chunk.js.map",
     "index.html": "/Grand-Salami/index.html",
-    "static/css/main.5ac06d04.chunk.css.map": "/Grand-Salami/static/css/main.5ac06d04.chunk.css.map",
+    "static/css/main.e1032e6b.chunk.css.map": "/Grand-Salami/static/css/main.e1032e6b.chunk.css.map",
     "static/js/2.fb995e84.chunk.js.LICENSE.txt": "/Grand-Salami/static/js/2.fb995e84.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.22788222.js",
     "static/js/2.fb995e84.chunk.js",
-    "static/css/main.5ac06d04.chunk.css",
-    "static/js/main.b8f4bafd.chunk.js"
+    "static/css/main.e1032e6b.chunk.css",
+    "static/js/main.212a3b83.chunk.js"
   ]
 }
