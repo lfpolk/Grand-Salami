@@ -46,6 +46,7 @@ const Scores = () => {
       scoresToRender = scores.map(score => {
         return <div class="score">
         <h1><img src={"https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/" + score.teams.home.team.id + ".svg"} alt={score.teams.home.team.name} class="teamLogo"></img> {score.teams.home.score}</h1><br></br>
+        {score.status.detailedState}
         <h1><img src={"https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/" + score.teams.away.team.id + ".svg"} alt={score.teams.away.team.name} class="teamLogo"></img> {score.teams.away.score}</h1>
         </div>
       });
