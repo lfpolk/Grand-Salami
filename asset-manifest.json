@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Grand-Salami/static/css/main.3d09d06e.chunk.css",
+    "main.css": "/Grand-Salami/static/css/main.2400c2d6.chunk.css",
     "main.js": "/Grand-Salami/static/js/main.22c69f44.chunk.js",
     "main.js.map": "/Grand-Salami/static/js/main.22c69f44.chunk.js.map",
     "runtime-main.js": "/Grand-Salami/static/js/runtime-main.22788222.js",
@@ -8,13 +8,13 @@
     "static/js/2.76c96dc7.chunk.js": "/Grand-Salami/static/js/2.76c96dc7.chunk.js",
     "static/js/2.76c96dc7.chunk.js.map": "/Grand-Salami/static/js/2.76c96dc7.chunk.js.map",
     "index.html": "/Grand-Salami/index.html",
-    "static/css/main.3d09d06e.chunk.css.map": "/Grand-Salami/static/css/main.3d09d06e.chunk.css.map",
+    "static/css/main.2400c2d6.chunk.css.map": "/Grand-Salami/static/css/main.2400c2d6.chunk.css.map",
     "static/js/2.76c96dc7.chunk.js.LICENSE.txt": "/Grand-Salami/static/js/2.76c96dc7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.22788222.js",
     "static/js/2.76c96dc7.chunk.js",
-    "static/css/main.3d09d06e.chunk.css",
+    "static/css/main.2400c2d6.chunk.css",
     "static/js/main.22c69f44.chunk.js"
   ]
 }
