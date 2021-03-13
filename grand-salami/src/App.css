@@ -8,13 +8,19 @@
 }
 
 .teamLogo{
-  display: block;
-  width: 100%;
+  width: 80%;
+  display: inline-block;
 }
 
 .scores{
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.bottomButtons {
+  text-align: center;
+  padding: 10px;
   justify-content: center;
 }
 

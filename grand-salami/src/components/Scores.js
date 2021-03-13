@@ -1,16 +1,20 @@
 import React, { useEffect, useState } from 'react';
 
 const Scores = () => {
-    const date = "2021-03-9"
-
-
+    var dateObj = new Date();
+    var month = dateObj.getMonth() + 1; //months from 1-12
+    var day = dateObj.getDate();
+    var year = dateObj.getFullYear();
     const [scores, setScores] = useState([]);
     const [salami, setSalami] = useState([]);
+    const [date, setDate] = useState(year + "-" + month + "-" + day);
 
     const getScores = async () => {
+
         try {
 
-            const response = await fetch("https://statsapi.web.nhl.com/api/v1/schedule");//?date=" + date);
+            console.log("new Date: " + date);
+            const response = await fetch("https://statsapi.web.nhl.com/api/v1/schedule//?date=" + date);
             const jsonData = await response.json();
             var games = jsonData.dates[0].games;
             
@@ -20,25 +24,38 @@ const Scores = () => {
             var awayScore = 0;
 
             for (var i = 0; i < games.length; i++){
-
                 homeScore += games[i].teams.home.score;
-
                 awayScore += games[i].teams.away.score;
             }
 
-
             setSalami([homeScore, awayScore])
-
             
         } catch (err){
-
+            console.log(err);
         }
     }
+
+    function addDay() {
+        var a = date.split(/[^0-9]/);
+        var d = new Date (a[0],a[1]-1,a[2]);
+        let temp = new Date(d);
+        temp.setDate(temp.getDate() + 1);
+        setDate(temp.getFullYear() + "-" + (temp.getMonth() + 1) + "-" + temp.getDate());   
+    }
+
+    function subtractDay() {
+        var a = date.split(/[^0-9]/);
+        var d = new Date (a[0],a[1]-1,a[2]);
+        let temp = new Date(d);
+        temp.setDate(temp.getDate() - 1);
+        setDate(temp.getFullYear() + "-" + (temp.getMonth() + 1) + "-" + temp.getDate());
+    }
+
 
 
     useEffect(() => {
         getScores();
-    }, [])
+    }, [date])
 
 
     let scoresToRender;
@@ -51,14 +68,17 @@ const Scores = () => {
         </div>
       });
     }
-  
+  //    <div class="bottomButtons"><button onClick={() => subtractDay()}>Previous Day</button> <button onClick={() => addDay()}>Next Day</button></div>
+
     return (
     <>
     <div class="score">
+    <div class ="date">{date}</div>
         <h1>Home: {salami[0]}</h1>
         <h1>Away: {salami[1]}</h1>
         </div>
     <div class="scores">{scoresToRender}</div>
+    <div class="bottomButtons"><button onClick={() => subtractDay()}>Previous Day</button> <button onClick={() => addDay()}>Next Day</button></div>
     </>);
 }
 
